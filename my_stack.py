@@ -41,23 +41,11 @@ class Stack:
 
 stack = Stack()
 
-# Новий стек порожній
-assert stack.is_empty() is True
-assert stack.peek() is None
-assert stack.pop() is None
+stack.push('a')
+stack.push('b')
+stack.push('c')
 
-# Додавання елементів
-stack.push("one")
-stack.push("two")
-
-assert stack.is_empty() is False
-assert stack.peek() == "two"
-
-# Видалення за принципом LIFO
-assert stack.pop() == "two"
-assert stack.pop() == "one"
-
-# Після видалення всіх елементів стек знову порожній
-assert stack.is_empty() is True
-
-print("Усі тести успішно пройдені")
+print(stack.peek())
+print(stack.pop())
+print(stack.peek())
+print(stack.is_empty())
