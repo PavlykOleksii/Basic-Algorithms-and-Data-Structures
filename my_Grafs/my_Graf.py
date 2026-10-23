@@ -1,5 +1,6 @@
 import networkx as nx
 import matplotlib.pyplot as plt
+import scipy as sp
 
 # Створення графа
 G = nx.DiGraph()  # Створення спрямованого графа
